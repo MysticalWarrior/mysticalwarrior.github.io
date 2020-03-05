@@ -16,3 +16,8 @@ v1.1.0
 
 v1.1.1
 - put login script into a seperate JS file
+
+v1.1.2
+- restructured login script into seperate functions
+- matched code structure across pages
+- added some links to the welcome page for some content at least...
