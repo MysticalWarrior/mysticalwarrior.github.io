@@ -13,3 +13,6 @@ v1.1.0
 - added a welcome page after succesful login
 - updated login button to change to more descriptive labels
 - changed site titles to match each page
+
+v1.1.1
+- put login script into a seperate JS file
