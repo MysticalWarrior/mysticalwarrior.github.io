@@ -1,19 +1,35 @@
 <!DOCTYPE html>
-<html>
-<title>
-Aidan M's Site
-</title>
-<body>
-<h1> This is my site </h1>
-<p> Site Version: 1.0.1 </p>
-<p> I’m hosted with GitHub Pages. </p>
+
+<h1> This is Aidan's site </h1>
+<p id="user">No user entered</p>
+<p id="authState">User Status: Unauthorized</p>
+<button id="btnLogin" onclick="login()">login</button>
+<p id="pConsole"></p>
+<p> Site Version: 1.0.2 </p>
 </body>
+
 <script>
-	alert ("opening new tab");
-	window.open(http://www.google.ca, '_blank');
+	let user;
+	let isAuth = false;
+	function login() {
+		//alert(user)//troubleshooting
+		if(!user) {
+			user = prompt("Please enter username: ");
+			document.getElementById('user').innerText = "User: " + user;
+			documen.getElementById('btnLogin').innerText= "Authorize";
+		}
+		else if(prompt(`Please enter ${user}\'s code: `) == 2)
+		{
+			isAuth = true;
+			document.getElementById('authState').innerText = "authorized";
+		}
+	}
 </script>
-/* v1.0.1 changes: 
-- added version counter 
-- changed script so it opens a new tab (window)
-- added a site title*/
+
+<html>
+	<title>
+		Aidan M's Site
+	</title>
+<body>
+
 </html>

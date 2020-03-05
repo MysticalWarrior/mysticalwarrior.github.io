@@ -1,0 +1,9 @@
+v1.0.1 changes:
+- added version counter 
+- changed script so it opens a new tab (window)
+- added a site title
+
+V1.0.2 changes:
+- reworked site into a login page instead of a title page
+- added user input funtionality using prompts to create an authorization practice
+  Current credintials are !null:2
