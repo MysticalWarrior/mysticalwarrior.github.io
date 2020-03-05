@@ -1,35 +1,38 @@
 <!DOCTYPE html>
-
-<h1> This is Aidan's site </h1>
-<p id="user">No user entered</p>
-<p id="authState">User Status: Unauthorized</p>
-<button id="btnLogin" onclick="login()">login</button>
-<p id="pConsole"></p>
-<p> Site Version: 1.0.2 </p>
-</body>
+<html>
+<h1> This is Aidan's site</h1>
+<h2>Please log in:</h2>
+<p id="user">User: </p>
+<p id="authState">Authorization Status: Unauthorized</p>
+<button id="btnLogin" onclick="login()">Enter username</button>
 
 <script>
 	let user;
 	let isAuth = false;
 	function login() {
 		//alert(user)//troubleshooting
-		if(!user) {
+		if(!user) 
+		{
 			user = prompt("Please enter username: ");
 			document.getElementById('user').innerText = "User: " + user;
-			documen.getElementById('btnLogin').innerText= "Authorize";
+			document.getElementById('btnLogin').innerText= "Authorize";
 		}
-		else if(prompt(`Please enter ${user}\'s code: `) == 2)
+		else if(isAuth)
+		{
+			window.open("welcome.html");
+			//this.window.close();
+		}
+		else if(!isAuth && (prompt(`Please enter ${user}\'s code: `) == 2))
 		{
 			isAuth = true;
 			document.getElementById('authState').innerText = "authorized";
+			document.getElementById('btnLogin').innerText= "Proceed to site";
 		}
 	}
 </script>
 
-<html>
-	<title>
-		Aidan M's Site
-	</title>
-<body>
+<title>
+	Site login
+</title>
 
 </html>

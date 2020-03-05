@@ -6,4 +6,10 @@ v1.0.1 changes:
 V1.0.2 changes:
 - reworked site into a login page instead of a title page
 - added user input funtionality using prompts to create an authorization practice
-  Current credintials are !null:2
+//Current credintials are !null:2
+
+v1.1.0
+- seperated login page
+- added a welcome page after succesful login
+- updated login button to change to more descriptive labels
+- changed site titles to match each page
